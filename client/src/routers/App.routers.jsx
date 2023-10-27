@@ -5,6 +5,7 @@ import { Reserva } from '../Pages/Reserva.jsx'
 import { Login } from '../Pages/Login.jsx';
 import { AddMovie } from '../Pages/AddMovie.jsx';
 import { InfoMovie } from '../Pages/InfoMovie.jsx';
+import { DirectorioP } from '../Pages/DirectorioPrueba.jsx';
 export const AppRouter = () => {
     return (
         <BrowserRouter>
@@ -32,6 +33,10 @@ export const AppRouter = () => {
                 <Route
                     path='/informacion-pelicula'
                     element={<InfoMovie />}
+                />
+                <Route
+                    path='/dp'
+                    element={<DirectorioP />}
                 />
             </Routes>
         </BrowserRouter>
